@@ -8,6 +8,5 @@ Page {
         text: "About page"
         anchors.centerIn: parent
     }
-
 }
 
