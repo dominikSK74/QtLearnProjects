@@ -2,10 +2,10 @@ import QtQuick
 import QtQuick.Controls
 
 Page {
-    title: qsTr("Home page")
+    title: qsTr("Edit profile page")
 
     Label {
-        text: "Home page"
+        text: "Edit profile page"
         anchors.centerIn: parent
     }
 

@@ -3,25 +3,44 @@ import QtQuick.Controls
 
 ApplicationWindow {
     id: root
-    width: 640
-    height: 480
+    width: 340
+    height: 540
     visible: true
     title: qsTr("Hello World")
 
     header: ToolBar {
+
+        background: Rectangle {
+            color: "green"
+            implicitHeight: menuButton.height
+        }
+
         ToolButton {
             id: menuButton
+            background: null
             anchors.left: parent.left
             anchors.verticalCenter: parent.verticalCenter
-            icon.source: "images/menu.svg"
-            onClicked: drawer.open()
+            icon.source: {
+                if(stackView.currentItem.pageName === "home") {
+                    "images/menu.svg"
+                }else {
+                    stackView.depth > 1 ? "images/backarrow.svg" : "images/menu.svg"
+                }
+            }
+
+            onClicked: {
+                if (stackView.depth > 1) {
+                    stackView.pop()
+                } else {
+                    drawer.open()
+                }
+            }
         }
 
         Label {
             anchors.centerIn: parent
-            text: "MyAppPatterns"
+            text: stackView.currentItem.title
             font.pixelSize: 20
-            elide: Label.ElideRight
         }
     }
 
@@ -33,14 +52,16 @@ ApplicationWindow {
         Column {
             anchors.fill: parent
 
-            ItemDelegate {
-                text: qsTr("Home")
-                width: parent.width
-                onClicked: {
-                    stackView.push("Home.qml")
-                    drawer.close()
-                }
-            }
+            // ItemDelegate {
+            //     text: qsTr("Home")
+            //     width: parent.width
+            //     onClicked: {
+            //         if(stackView.currentItem.pageName !== "home"){
+            //             stackView.pop()
+            //         }
+            //         drawer.close()
+            //     }
+            // }
 
             ItemDelegate {
                 text: qsTr("Profile")

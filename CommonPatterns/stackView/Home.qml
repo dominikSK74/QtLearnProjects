@@ -2,12 +2,12 @@ import QtQuick
 import QtQuick.Controls
 
 Page {
-    title: qsTr("Profile page")
+    title: qsTr("Home page")
+    property string pageName: "home"
 
     Label {
-        text: "Profile page"
+        text: "Home page"
         anchors.centerIn: parent
     }
 
 }
-
