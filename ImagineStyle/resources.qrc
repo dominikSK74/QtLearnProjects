@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qtquickcontrols2.conf</file>
+        <file>images/imagine/button-background.9.png</file>
+        <file>images/imagine/button-background-checked.9.png</file>
+        <file>images/imagine/button-background-pressed.9.png</file>
+    </qresource>
+</RCC>
