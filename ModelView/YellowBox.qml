@@ -7,13 +7,13 @@ Item {
 
 
     Rectangle {
-       color: "green"
+       color: "yellow"
        anchors.fill: parent
        radius: radius
        Text {
             anchors.centerIn: parent
             text: root.text
-            color: "white"
+            color: "black"
             font.pixelSize: 22
        }
     }
