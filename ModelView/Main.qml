@@ -6,5 +6,5 @@ Window {
     visible: true
     title: qsTr("ModelView")
 
-    ListViewExamples {}
+    GridViewExamples {}
 }
