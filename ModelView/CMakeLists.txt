@@ -31,6 +31,7 @@ qt_add_qml_module(appModelView
         GridViewExamples.qml
         DelegateAnimations.qml
         ShapeShiftingDelegates.qml
+        Paths.qml
     RESOURCES
         resources.qrc
 )
