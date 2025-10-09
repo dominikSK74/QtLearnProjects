@@ -8,6 +8,13 @@ find_package(Qt6 REQUIRED COMPONENTS Quick)
 
 qt_standard_project_setup(REQUIRES 6.8)
 
+
+# UŻYWAJ SYSTEMU QRC I WŁĄCZ TA LINIE KODU:
+#====================================================
+set(CMAKE_AUTORCC ON)
+# !!!!!!!!!!!!!!!!!!!!!!!
+#====================================================
+
 qt_add_executable(appModelView
     main.cpp
 )
@@ -23,6 +30,9 @@ qt_add_qml_module(appModelView
         ListViewExamples.qml
         GridViewExamples.qml
         DelegateAnimations.qml
+        ShapeShiftingDelegates.qml
+    RESOURCES
+        resources.qrc
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
