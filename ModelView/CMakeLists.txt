@@ -22,6 +22,7 @@ qt_add_qml_module(appModelView
         YellowBox.qml
         ListViewExamples.qml
         GridViewExamples.qml
+        DelegateAnimations.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
