@@ -32,6 +32,7 @@ qt_add_qml_module(appModelView
         DelegateAnimations.qml
         ShapeShiftingDelegates.qml
         Paths.qml
+        MyTableModel.qml
     RESOURCES
         resources.qrc
 )
