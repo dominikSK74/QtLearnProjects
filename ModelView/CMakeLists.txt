@@ -34,6 +34,7 @@ qt_add_qml_module(appModelView
         Paths.qml
         MyTableModel.qml
         XMLModels.qml
+        SectionsInLists.qml
     RESOURCES
         resources.qrc
 )
