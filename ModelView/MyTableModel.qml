@@ -25,7 +25,8 @@ Item {
                 ]
                 rows: [
                     { name: "1", city: "2" },
-                    { name: "3", city: "4" }
+                    { name: "3", city: "4" },
+                    { name: "5", city: "6" }
                 ]
             }
             delegate: cellDelegate

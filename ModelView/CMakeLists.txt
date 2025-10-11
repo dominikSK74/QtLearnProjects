@@ -33,6 +33,7 @@ qt_add_qml_module(appModelView
         ShapeShiftingDelegates.qml
         Paths.qml
         MyTableModel.qml
+        XMLModels.qml
     RESOURCES
         resources.qrc
 )
