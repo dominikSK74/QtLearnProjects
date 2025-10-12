@@ -6,7 +6,7 @@ Window {
     visible: true
     title: qsTr("Hello World")
 
-    GradientExample {
+    ShadowsExample {
         anchors.fill: parent
     }
 }
