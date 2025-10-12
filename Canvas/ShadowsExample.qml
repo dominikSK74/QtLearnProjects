@@ -7,7 +7,7 @@ Item {
 
         Canvas {
             id: canvas
-            anchors.fill: parent
+            anchors.fill: parentres
 
             onPaint: {
 
