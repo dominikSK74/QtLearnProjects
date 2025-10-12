@@ -18,6 +18,7 @@ qt_add_qml_module(appCanvas
     QML_FILES
         Main.qml
         QML_FILES SimpleCanvasExample.qml
+        QML_FILES GradientExample.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
