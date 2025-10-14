@@ -6,7 +6,7 @@ Window {
     visible: true
     title: qsTr("Hello World")
 
-    TransformationExample {
+    CompositionModesExamples {
         anchors.fill: parent
     }
 }
