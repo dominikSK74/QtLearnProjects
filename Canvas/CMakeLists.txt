@@ -30,6 +30,7 @@ qt_add_qml_module(appCanvas
         PixelBuffersExample.qml
         Paint.qml
         ColorSquare.qml
+        PortingHTML5.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
